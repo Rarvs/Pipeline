@@ -7,7 +7,7 @@ public class MemoryStage {
     public Instruction memory(Instruction instruction){
         instruction.memory();
         if(instruction.isHasMemory()){
-            System.out.print("MEM: " + instruction.getImmediate());
+            System.out.println("MEM: " + instruction.getImmediate());
         }
         return instruction;
     }

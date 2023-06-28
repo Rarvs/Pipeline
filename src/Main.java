@@ -8,8 +8,10 @@ public class Main {
         Compile compile = new Compile();
         compile.fetch();
         try{
+            int i = 1;
             while(true){
                 new Pipeline().run();
+                System.out.println("Clock:" + i++);
             }
         }catch (Exception e){
             System.exit(0);

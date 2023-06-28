@@ -18,7 +18,7 @@ public class Compile {
     }
 
     public void fetch() {
-        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Rafael\\IdeaProjects\\Pipelinezera\\src\\input.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("/home/rarvs/IdeaProjects/Pipeline/src/input.txt"))) {
             String line;
             int instructionAddress = 0;
 
