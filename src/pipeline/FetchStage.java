@@ -22,7 +22,9 @@ public class FetchStage {
             Instruction instruction = instructionMemory.fetchInstruction(programCounter.getPC());
             programCounter.incrementPC();
             System.out.println("IF:\nPC:" + programCounter.getPC());
+            if(instruction != null){
             System.out.print(instruction);
+            }
             return instruction;
     }
 }
